@@ -2,10 +2,10 @@
 /**
  * Plugin Name: ACF to REST API
  * Description: Exposes Advanced Custom Fields Endpoints in the WordPress REST API
- * Author: Aires Gonçalves
- * Author URI: http://github.com/airesvsg
+ * Author: Christian Praiß
+ * Author URI: http://github.com/christianpraiss
  * Version: 3.1.0
- * Plugin URI: http://github.com/airesvsg/acf-to-rest-api
+ * Plugin URI: http://github.com/christianpraiss/acf-to-rest-api
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

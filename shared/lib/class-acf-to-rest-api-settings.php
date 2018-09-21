@@ -8,8 +8,7 @@ if ( ! class_exists( 'ACF_To_REST_API_Settings' ) ) {
 
 	class ACF_To_REST_API_Settings {
 
-		private static $donation_url = 'https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=airesvsg%40gmail%2ecom&lc=BR&item_name=Aires%20Goncalves&no_note=0&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedGuest';
-		private static $github_url   = 'http://github.com/airesvsg/acf-to-rest-api';
+		private static $github_url   = 'http://github.com/christianpraiss/acf-to-rest-api';
 
 		public static function init() {
 			self::hooks();
@@ -54,7 +53,6 @@ if ( ! class_exists( 'ACF_To_REST_API_Settings' ) ) {
 		public static function plugin_row_meta( $plugin_meta, $plugin_file, $plugin_data ) {
 			if ( isset( $plugin_data['slug'] ) && 'acf-to-rest-api' == $plugin_data['slug'] ) {
 				$plugin_meta['acf-to-rest-api-github'] = sprintf( '<a href="%s" target="_blank">%s</a>', self::$github_url, esc_html__( 'Fork me on GitHub' ) );
-				$plugin_meta['acf_to_rest_api_donation'] = sprintf( '<a href="%s" target="_blank">%s</a>', self::$donation_url, esc_html__( 'Make a donation', 'acf-to-rest-api' ) );
 			}
 
 			return $plugin_meta;
